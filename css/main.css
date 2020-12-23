@@ -299,10 +299,9 @@ footer {
 
 .pro-jumbo{
   background: transparent linear-gradient(236deg, #0B3BA0 0%, #2985DB 99%, #2985DB 100%) 0% 0% no-repeat padding-box;
-  border-radius: 80px;
+  border-radius: 120px;
   padding: 2%;
   color: white;
-  width: 100%;
 }
 
 .cart_spacer{
@@ -311,14 +310,33 @@ footer {
 .cart-head{
   font-family: GothamMeduim;
   font-size: 40px;
-  padding-left: 10%;
+  /* padding-left: 10%; */
 }
 .cart-body{
   font-family: GothamLight;
    font-size: 30px;
-   padding-left: 10%;
-   padding-right: 12%;
+   /* height: 90px; */
+   /* padding-left: 10%; */
+   /* padding-right: 12%; */
+   text-align: justify;
+   word-wrap: break-word;
+   overflow: hidden;
  }
+
+ .cart-body_{
+  font-family: GothamLight;
+  font-size: 30px;
+  max-height: 100%;
+   /* padding-left: 10%; */
+   /* padding-right: 12%; */
+  text-align: justify;
+  word-wrap: break-word;
+ }
+ 
+
+ .moretext {
+  display: none;
+}
 
 #module {
   max-width: 100%;

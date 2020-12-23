@@ -85,7 +85,7 @@ include_once 'includes/nav.php';
 <div class="container-fluid">
     <div class="about_vis_body">
         <div style="padding: 1% 0 1% 2%">
-         <span class="vision">VISION |</span> <span style="font-size: 35px;font-family: GothamMeduim">
+         <span class="vision">VISION |</span> <span class="vision_desc" style="">
          <i>To digitalize and empower the needs of the operator</i></span>
     </div></div>
 
