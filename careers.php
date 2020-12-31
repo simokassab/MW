@@ -13,10 +13,8 @@ include_once 'includes/nav.php';
             </div>
             <br>
             <div class="subtitle">
-            Media world  is always looking for highly qualified, motivated people to join the family
-
-                <br>
-  
+              Media world  is always looking for highly qualified, motivated people to join the family
+              <br>
             </div>
             
         </div>
@@ -80,7 +78,7 @@ include_once 'includes/nav.php';
       </form>
     </div>
 </div>
-<div class="section-space-padding"></div>
+<div class="section-space-padding1"></div>
 
 
 <?php include 'includes/footer.php'; ?>

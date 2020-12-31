@@ -24,7 +24,7 @@ include_once 'includes/nav.php';
 </div>
 
 <!-- Slider Carousel -->
-<div class="container-fluid  contact_section">
+<div class="container-fluid  contact_section" style="background-color:white;">
       
   <div class="row mx-auto my-auto">
     <div  class="w-100 findus_div">
@@ -41,7 +41,7 @@ include_once 'includes/nav.php';
               <img src="./img/rbt.png" class="img-fluid" style="float: left;" />
             </div>
             <div class="col col-lg-11 col-xs-6 col-md-10">
-              <p class="findus_phone" style="float: left; margin-left: -5%" >+9647804299050 </p>
+              <p class="findus_phone" style="float: left; margin-left: -2%" >+9647804299050 </p>
             </div>
           </div>
         </div>
@@ -53,7 +53,7 @@ include_once 'includes/nav.php';
               <img src="./img/rbt.png" class="img-fluid" style="float: left; " />
             </div>
             <div class="col col-lg-11 col-xs-6 col-md-10">
-              <p class="findus_phone" style="float: left; margin-left: -5%" >+961 1 333 675 </p>
+              <p class="findus_phone" style="float: left; margin-left: -2%" >+961 1 333 675 </p>
             </div>
           </div>
         </div>
@@ -68,7 +68,7 @@ include_once 'includes/nav.php';
               <img src="./img/rbt.png" class="img-fluid" style="float: left;" />
             </div>
             <div class="col col-lg-11 col-xs-6 col-md-10">
-              <p class="findus_phone" style="float: left; margin-left: -5%" >+962 6 5868361 </p>
+              <p class="findus_phone" style="float: left; margin-left: -2%" >+962 6 5868361 </p>
             </div>
           </div>
         </div>
@@ -80,7 +80,7 @@ include_once 'includes/nav.php';
               <img src="./img/rbt.png" class="img-fluid" style="float: left; " />
             </div>
             <div class="col col-lg-11 col-xs-6 col-md-10">
-              <p class="findus_phone" style="float: left; margin-left: -5%" >+971-54-439-8554 </p>
+              <p class="findus_phone" style="float: left; margin-left: -2%" >+971-54-439-8554 </p>
             </div>
           </div>
         </div>
@@ -89,7 +89,7 @@ include_once 'includes/nav.php';
   </div>
   
 </div>
-<div class="section-space-padding"></div>
+<div class="section-space-padding1"></div>
 
 
 <?php include 'includes/footer.php'; ?>

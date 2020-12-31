@@ -62,7 +62,7 @@ include_once 'includes/nav.php';
     </div>
 </div>
 
-<div class="container-fluid">
+<div class="container-fluid" style="background-color:white;">
     <div class="row">
         <div class="col col-lg-6 col-md-6 col-xs-12 col-sm-6" style="padding: 5% 5% 5% 5%;">
             <div class="about_mission_title">MISSION</div>
@@ -82,7 +82,7 @@ include_once 'includes/nav.php';
         </div>
     </div>
 </div>
-<div class="container-fluid">
+<div class="container-fluid" style="background-color:white;">>
     <div class="about_vis_body">
         <div style="padding: 1% 0 1% 2%">
          <span class="vision">VISION |</span> <span class="vision_desc" style="">
@@ -90,6 +90,6 @@ include_once 'includes/nav.php';
     </div></div>
 
 </div>
-
+<div class="section-space-padding1"></div>
 
 <?php include 'includes/footer.php'; ?>

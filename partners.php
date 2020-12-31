@@ -23,7 +23,7 @@ include_once 'includes/nav.php';
     <div class="container-fluid pro_section ">
         <div class="row pro-jumbo">
             <div class="col col-lg-1 col-md-1 col-xs-3 " >
-                <img src="img/vas.png" class="mx-auto d-block" style="padding-top:20%" >
+                <img src="img/vas.png"  class="img_part"  >
             </div>
             <div class="col col-lg-10 col-md-10 col-xs-7">
                 <p class="cart-head">VAS</p>
@@ -51,7 +51,7 @@ include_once 'includes/nav.php';
     <div class="container-fluid pro_section ">
         <div class="row pro-jumbo">
             <div class="col col-lg-1 col-md-1 col-xs-3">
-                <img src="img/dcb.png" class="mx-auto d-block" style=" margin-left: 2%; padding-bottom:2% !important" >
+                <img src="img/dcb.png"  class="img_part">
             </div>
             <div class="col col-lg-10 col-md-10 col-xs-7">
                 <p class="cart-head">DCB</p>
@@ -73,7 +73,7 @@ include_once 'includes/nav.php';
     <div class="container-fluid pro_section ">
         <div class="row pro-jumbo">
             <div class="col col-lg-1 col-md-1 col-xs-3">
-                <img src="img/megapromo.png" class="mx-auto d-block" style=" margin-left: 2%; padding-bottom:2% !important" >
+                <img src="img/megapromo.png"  class="img_part" >
             </div>
             <div class="col col-lg-10 col-md-10 col-xs-7">
                 <p class="cart-head">Mega Promo</p>
@@ -95,7 +95,7 @@ include_once 'includes/nav.php';
     <div class="container-fluid pro_section ">
         <div class="row pro-jumbo">
             <div class="col col-lg-1 col-md-1 col-xs-3">
-                <img src="img/gamification.png" class="mx-auto d-block" style=" margin-left: 2%; padding-bottom:2% !important" >
+                <img src="img/gamification.png"  class="img_part" >
             </div>
             <div class="col col-lg-10 col-md-10 col-xs-7">
                 <p class="cart-head">Gamification</p>
@@ -117,7 +117,7 @@ include_once 'includes/nav.php';
     <div class="container-fluid pro_section ">
         <div class="row pro-jumbo">
             <div class="col col-lg-1 col-md-1 col-xs-3">
-                <img src="img/misscall.png" class="mx-auto d-block" style=" margin-left: 2%; padding-bottom:2% !important" >
+                <img src="img/misscall.png"  class="img_part" >
             </div>
             <div class="col col-lg-10 col-md-10 col-xs-7">
                 <p class="cart-head">Missed-call Notification</p>
@@ -139,7 +139,7 @@ include_once 'includes/nav.php';
     <div class="container-fluid pro_section ">
         <div class="row pro-jumbo">
             <div class="col col-lg-1 col-md-1 col-xs-3">
-                <img src="img/rbt.png" class="mx-auto d-block" style=" margin-left: 2%; padding-bottom:2% !important" >
+                <img src="img/rbt.png"  style="padding-top:70%; width:40%; margin-left: 15%" >
             </div>
             <div class="col col-lg-10 col-md-10 col-xs-7">
                 <p class="cart-head">Digital RBT</p>
@@ -162,7 +162,7 @@ include_once 'includes/nav.php';
     <div class="container-fluid pro_section ">
         <div class="row pro-jumbo">
             <div class="col col-lg-1 col-md-1 col-xs-3">
-                <img src="img/storyrbt.png" class="mx-auto d-block" style=" margin-left: 2%; padding-bottom:2% !important" >
+                <img src="img/storyrbt.png"  style="padding-top:70%; width:40%; margin-left: 15%">
             </div>
             <div class="col col-lg-10 col-md-10 col-xs-7">
                 <p class="cart-head">Story RBT</p>
@@ -184,7 +184,7 @@ include_once 'includes/nav.php';
     <div class="container-fluid pro_section ">
         <div class="row pro-jumbo">
             <div class="col col-lg-1 col-md-1 col-xs-3">
-                <img src="img/sms.png" class="mx-auto d-block" style=" margin-left: 2%; padding-bottom:2% !important" >
+                <img src="img/sms.png"  class="img_part" >
             </div>
             <div class="col col-lg-10 col-md-10 col-xs-7">
                 <p class="cart-head">SMS Advanced Tool</p>
@@ -206,7 +206,7 @@ include_once 'includes/nav.php';
     <div class="container-fluid pro_section ">
         <div class="row pro-jumbo">
             <div class="col col-lg-1 col-md-1 col-xs-3">
-                <img src="img/loan.png" class="mx-auto d-block" style=" margin-left: 2%; padding-bottom:2% !important" >
+                <img src="img/loan.png"  class="img_part" >
             </div>
             <div class="col col-lg-10 col-md-10 col-xs-7">
                 <p class="cart-head">Credit Loan</p>
@@ -228,7 +228,7 @@ include_once 'includes/nav.php';
     <div class="container-fluid pro_section ">
         <div class="row pro-jumbo">
             <div class="col col-lg-1 col-md-1 col-xs-3">
-                <img src="img/vasstore.png" class="mx-auto d-block" style=" margin-left: 2%; padding-bottom:2% !important" >
+                <img src="img/vasstore.png"  class="img_part" >
             </div>
             <div class="col col-lg-10 col-md-10 col-xs-7">
                 <p class="cart-head">VAS Store</p>

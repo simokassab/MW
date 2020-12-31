@@ -56,7 +56,7 @@ include_once 'includes/nav.php';
           <div class="carousel-item active">
               <div class="col-lg-4" style="border-right: 1px solid white; padding:3% 3% 3% 3%;">
                 <div class="iconn" >
-                  <img src="./img/vas.png"  class="img-fluid" style="padding-bottom: 5%;" />
+                  <img src="./img/vas.png"  class="img-fluid img_prod" style="padding-bottom: 5%;" />
                   <div class="car_title">
                     vas 
                   </div>
@@ -70,7 +70,7 @@ include_once 'includes/nav.php';
           <div class="carousel-item">
             <div class="col-lg-4" style="border-right: 1px solid white; padding:3% 3% 3% 3%;">
               <div class="iconn" >
-                <img src="./img/dcb.png" class="img-fluid" style="padding-bottom: 5%;" />
+                <img src="./img/dcb.png" class="img-fluid img_prod" style="padding-bottom: 5%;" />
                 <div class="car_title">
                   dcb 
                 </div>
@@ -83,7 +83,7 @@ include_once 'includes/nav.php';
           <div class="carousel-item">
             <div class="col-lg-4" style="border-right: 1px solid white; padding:3% 3% 3% 3%;">
               <div class="iconn" >
-                <img src="./img/megapromo.png"class="img-fluid" style="padding-bottom: 5%;" />
+                <img src="./img/megapromo.png"class="img-fluid img_prod" style="padding-bottom: 5%;" />
                 <div class="car_title">
                   mega promo 
                 </div>
@@ -96,7 +96,7 @@ include_once 'includes/nav.php';
           <div class="carousel-item">
             <div class="col-lg-4" style="border-right: 1px solid white; padding:3% 3% 3% 3%;">
               <div class="iconn" >
-                <img src="./img/gamification.png" class="img-fluid" style="padding-bottom: 5%;" />
+                <img src="./img/gamification.png" class="img-fluid img_prod" style="padding-bottom: 5%;" />
                 <div class="car_title">
                   gamification 
                 </div>
@@ -109,7 +109,7 @@ include_once 'includes/nav.php';
           <div class="carousel-item">
             <div class="col-lg-4" style="border-right: 1px solid white; padding:3% 3% 3% 3%;">
               <div class="iconn" >
-                <img src="./img/misscall.png" class="img-fluid" style="padding-bottom: 5%;" />
+                <img src="./img/misscall.png" class="img-fluid img_prod" style="padding-bottom: 5%;" />
                 <div class="car_title">
                 Missed-call Notification
                 </div>
@@ -122,7 +122,7 @@ include_once 'includes/nav.php';
           <div class="carousel-item">
             <div class="col-lg-4" style="border-right: 1px solid white; padding:3% 3% 3% 3%;">
               <div class="iconn" >
-                <img src="./img/rbt.png" class="img-fluid" style="padding-bottom: 5%;" />
+                <img src="./img/rbt.png" class="img-fluid img_prod" style="padding-bottom: 5%;" />
                 <div class="car_title">
                  digital rbt
                 </div>
@@ -190,7 +190,13 @@ include_once 'includes/nav.php';
       </td>
       </tr>
     </table>
+    
   </div>
+  <div style="margin-top: 5%; text-align:center;" > 
+        <a class="viewall" href="partners.php">
+          VIEW ALL
+        </a>
+    </div>
 </div>
 </div>
 
@@ -206,4 +212,4 @@ include_once 'includes/nav.php';
 
 
 
-<?php // include 'includes/footer.php'; ?>
+<?php  include 'includes/footer.php'; ?>

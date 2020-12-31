@@ -27,7 +27,7 @@
  }
 
  html {
-  overflow-x: hidden
+  overflow-x: hidden;
   }
  html,
  body {
@@ -297,6 +297,11 @@ footer {
   margin-left: 15%;
 }
 
+.img_part {
+  padding-top:70%; 
+  width:60%;
+}
+
 .pro-jumbo{
   background: transparent linear-gradient(236deg, #0B3BA0 0%, #2985DB 99%, #2985DB 100%) 0% 0% no-repeat padding-box;
   border-radius: 120px;
@@ -406,6 +411,23 @@ footer {
     background-color: white;
 }
 
+.viewall {
+  font-family: 'GothamMeduim';
+  color: #0B3BA0 !important;
+  border: 2px solid #0B3BA0;
+  border-radius: 42px;
+  opacity: 1;
+  padding: 15px 35px 15px 35px;
+  font-size: 1.25em;
+  cursor: pointer;
+}
+
+.viewall:hover {
+ 
+    color: white !important;
+    background-color: #0B3BA0;
+}
+
 .subimage {
   color: white;
   font-family: 'GothamMeduim';
@@ -421,7 +443,8 @@ fieldset {
 .slid_section {
   padding-left: 5% !important;
   padding-right:  5% !important;
-  margin-top: -7%;
+ 
+  background-color: white;
 }
 
 .pro_section {
@@ -462,6 +485,7 @@ fieldset {
   padding-left: 5% !important;
   padding-right:  5% !important;
   margin-top: -15%;
+  background-color: white;
 }
 
 .news_row{
@@ -616,6 +640,8 @@ button:hover {
   border-radius: 20px;
   min-height: 200px;
   padding: 2% 2% 2% 2%;
+  background-color: white;
+  margin-top: -10%;
 
 }
 
@@ -625,6 +651,7 @@ button:hover {
   border-radius: 20px;
   min-height: 200px;
   padding: 2% 2% 2% 5%;
+  margin-top: -10%;
 
 }
 
@@ -715,6 +742,11 @@ button:hover {
 
 .section-space-padding {
   padding: 30px 0px;
+}
+
+.section-space-padding1 {
+  padding: 30px 0px;
+  background-color: white;
 }
 
 .car_title {
@@ -817,11 +849,78 @@ th, td {
   right: -7.5% !important;
 }
 
+td img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
 
 /* responsive */
 
-@media only screen and (max-width : 440px) { 
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
 
+  html {
+
+  }
+
+  .typed {
+    font-size: 4.2em !important;
+    margin-left: 15% !important;
+    margin-top: 20% !important ;
+    margin-bottom: 0 !important;
+  }
+
+  .learnmore {
+    border: 2px solid #FFFFFF;
+    border-radius: 45px;
+    padding: 12px 22px 12px 22px;
+    font-size: 0.8em;
+    cursor: pointer;
+  }
+
+  .img_prod {
+    width: 17% !important;
+  }
+
+  .news_title {
+    font-size: 2em !important;
+  }
+
+  .news_subtitle {
+    font-size: 1.5em !important;
+  }
+
+  .pro_title {
+    font-size: 4.3em !important;
+  }
+
+  .pro_subtitle {
+    font-size: 26px !important;
+  }
+
+  .contact_title {
+    font-size: 2.9em!important;
+  
+  }
+  .findus_title {
+    font-size: 2.2em!important;
+  }
+
+  .findus_subtitle {
+    font-size: 1.557em !important;
+  }
+  .findus_phone {
+    font-size: 1.557em !important;
+  }
+
+
+}
+
+@media only screen and (max-width : 440px) { 
+  
   .typed {
     font-size: 2.7em !important;
     margin-left: 2% !important;
@@ -919,6 +1018,7 @@ label {
     line-height:150%;
     margin-left: 2%;
   }
+  
   .learnmore {
     border: 2px solid #FFFFFF;
     border-radius: 45px;
@@ -950,6 +1050,8 @@ label {
     /* margin-top: 30%; */
   }
 
+  
+
   .slid_section {
     padding-left: 0% !important;
     padding-right:  0% !important;
@@ -960,11 +1062,13 @@ label {
   .carous_div {
     border-radius: 0!important;
     
+    
   }
 
   .car_title {
     font-size: 1.875em;
   }
+
   .car_body { 
   
     font-size: 1.5em;

@@ -8,7 +8,6 @@ include_once 'includes/nav.php';
     <div class="row h-75">
         <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
             <div class="typed">
-            
                NEWS
             </div>
             <br>
@@ -88,7 +87,7 @@ reduce operational costs, while expanding and creating an efficient ecosystem.<b
   </div>
   
 </div>
-<div class="section-space-padding"></div>
+<div class="section-space-padding"></div><br><br>
 <div class="section-space-padding"></div>
 
 
