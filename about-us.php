@@ -5,7 +5,7 @@ include_once 'includes/nav.php';
 
 <div class="container-fluid aboutus">
     <div class="row h-75">
-        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6 my-auto">
+        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
             <div class="about_title">
                 ABOUT US
             </div>
@@ -22,7 +22,7 @@ include_once 'includes/nav.php';
 </div>
 
 <!-- Slider Carousel -->
-<div class="container-fluid slid_section">
+<div class="container-fluid slid_section ">
     <div class="row mx-auto my-auto">
         <div class="carous_div">
             <span class="section_about_title" style="padding-left: 2%">
@@ -40,19 +40,19 @@ include_once 'includes/nav.php';
                     World was able to stand out.
                 </div>
                 <div class="row" style="padding-top: 5%">
-                        <div class="col">
+                        <div class="col col-xs-4">
                             <img src="./img/about-i-1.png" class="img img-fluid about-icon-img"/>
                         </div>
-                        <div class="col">
+                        <div class="col col-xs-4">
                             <img src="./img/about-i-2.png" class="img img-fluid about-icon-img"/>
                         </div>
-                        <div class="col">
+                        <div class="col col-xs-4">
                             <img src="./img/about-i-3.png" class="img img-fluid about-icon-img"/>
                         </div>
-                        <div class="col">
+                        <div class="col col-xs-6">
                             <img src="./img/about-i-4.png" class="img img-fluid about-icon-img"/>
                         </div>
-                        <div class="col">
+                        <div class="col col-xs-6">
                             <img src="./img/about-i-5.png" class="img img-fluid about-icon-img"/>
                         </div>
 
@@ -72,7 +72,7 @@ include_once 'includes/nav.php';
                 by simplifying the delivery of complex networks with
                 our innovative products and services.</div>
         </div>
-        <div class="col col-lg-6 col-md-6 col-xs-12 col-sm-6" style="padding: 7% 5% 5% 0%;">
+        <div class="col col-lg-6 col-md-6 col-xs-12 col-sm-6" style="padding: 7% 5% 5% 5%;">
             <div class="about_desc_body">
                 We hold ourselves responsible for the satisfaction
                 of our customers and partners, by honoring our
@@ -82,10 +82,10 @@ include_once 'includes/nav.php';
         </div>
     </div>
 </div>
-<div class="container-fluid" style="background-color:white;">>
+<div class="container-fluid" style="background-color:white;">
     <div class="about_vis_body">
         <div style="padding: 1% 0 1% 2%">
-         <span class="vision">VISION |</span> <span class="vision_desc" style="">
+         <span class="vision">VISION |</span> <span class="vision_desc" >
          <i>To digitalize and empower the needs of the operator</i></span>
     </div></div>
 

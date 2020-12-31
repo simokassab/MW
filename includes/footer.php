@@ -1,5 +1,5 @@
 <nav class="navbar sticky-bottom navbarbottom">
-    <ul class="nav navbar-nav text-nowrap flex-row mx-md-auto nav-fill w-75">
+    <ul class="nav navbar-nav text-nowrap flex-row mx-md-auto nav-fill w-75" >
         <li class="nav-item ">
             <a class="nav-link " href="./index.php">WHO WE ARE</span></a>
         </li>

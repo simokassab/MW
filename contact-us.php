@@ -28,9 +28,9 @@ include_once 'includes/nav.php';
       
   <div class="row mx-auto my-auto">
     <div  class="w-100 findus_div">
-        <span class="contact_title">
+        <div class="contact_title">
             WEHRE YOU CAN FIND US
-        </span>
+        </div>
       <div class="section-space-padding"></div>
       <div class="row">
         <div class="col col-lg-6 col-md-12 col-xs-12">
@@ -38,22 +38,22 @@ include_once 'includes/nav.php';
           <p class="findus_subtitle">Iraq- Baghdad - Jadryah 915 | 26 | 3</p>
           <div class="row">
             <div class="col col-lg-1 col-xs-6 col-md-2">
-              <img src="./img/rbt.png" class="img-fluid" style="float: left;" />
+              <img src="./img/rbt.png" class="img-fluid img_phone" style="float: left;" />
             </div>
             <div class="col col-lg-11 col-xs-6 col-md-10">
-              <p class="findus_phone" style="float: left; margin-left: -2%" >+9647804299050 </p>
+              <p class="findus_phone"  >+9647804299050 </p>
             </div>
           </div>
         </div>
         <div class="col col-lg-6 col-md-12 col-xs-12">
           <p class="findus_title">beirut office</p>
-          <p class="findus_subtitle">Achrafieh, Tabaris, Chehade Street, Dakdouk Building, 3rd Floor </p>
+          <p class="findus_subtitle">Achrafieh, Tabaris, Chehade Street, Dakdouk Building, 3rd Floor</p>
           <div class="row">
             <div class="col col-lg-1 col-xs-6 col-md-2">
-              <img src="./img/rbt.png" class="img-fluid" style="float: left; " />
+              <img src="./img/rbt.png" class="img-fluid img_phone" style="float: left;" />
             </div>
             <div class="col col-lg-11 col-xs-6 col-md-10">
-              <p class="findus_phone" style="float: left; margin-left: -2%" >+961 1 333 675 </p>
+              <p class="findus_phone"  >+961 1 333 675 </p>
             </div>
           </div>
         </div>
@@ -68,7 +68,7 @@ include_once 'includes/nav.php';
               <img src="./img/rbt.png" class="img-fluid" style="float: left;" />
             </div>
             <div class="col col-lg-11 col-xs-6 col-md-10">
-              <p class="findus_phone" style="float: left; margin-left: -2%" >+962 6 5868361 </p>
+              <p class="findus_phone"  >+962 6 5868361 </p>
             </div>
           </div>
         </div>
@@ -80,7 +80,7 @@ include_once 'includes/nav.php';
               <img src="./img/rbt.png" class="img-fluid" style="float: left; " />
             </div>
             <div class="col col-lg-11 col-xs-6 col-md-10">
-              <p class="findus_phone" style="float: left; margin-left: -2%" >+971-54-439-8554 </p>
+              <p class="findus_phone"  >+971-54-439-8554 </p>
             </div>
           </div>
         </div>

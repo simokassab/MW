@@ -298,7 +298,7 @@ footer {
 }
 
 .img_part {
-  padding-top:70%; 
+  padding-top:50%; 
   width:60%;
 }
 
@@ -443,7 +443,6 @@ fieldset {
 .slid_section {
   padding-left: 5% !important;
   padding-right:  5% !important;
- 
   background-color: white;
 }
 
@@ -681,6 +680,8 @@ button:hover {
   letter-spacing: 0px;
   color: #FFFFFF;
   font-size: 1.875em;
+  float: left; 
+  margin-left: -2%
 }
 
 .container_contact {
@@ -860,9 +861,20 @@ td img{
 
 /* Desktops and laptops ----------- */
 @media only screen
-and (min-width : 1224px) {
+and (max-width : 1724px)  {
 
-  html {
+  .section_about_title {
+    font-size: 2.513em;
+  }
+
+  .car_about_body { 
+
+    font-size: 1.875em;
+
+  }
+
+  .img_part {
+    padding-top:70%; 
 
   }
 
@@ -914,7 +926,13 @@ and (min-width : 1224px) {
   }
   .findus_phone {
     font-size: 1.557em !important;
+    
   }
+
+  .about_desc_body{
+    font-size: 27px;
+    
+   }
 
 
 }
@@ -927,8 +945,33 @@ and (min-width : 1224px) {
     margin-top: 20% !important ;
     margin-bottom: 0 !important;
   }
+
+  .about_title {
+    font-size: 2.7em !important;
+    margin-left: 2% !important;
+    margin-top: 20% !important ;
+    margin-bottom: 0 !important;
+  }
+
+  .about_subtitle {
+      font-size: 1.1em !important;
+      line-height:150%;
+      margin-left: 2%;
+    }
+
+  .viewall {
+    font-size: 0.8em;
+  }
+
   .homeslider {
     background-image: url("../img/iphone.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 150%;
+  }
+
+  .aboutus{
+    background-image: url("../img/mob_about.PNG");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     min-height: 150%;
@@ -952,7 +995,49 @@ and (min-width : 1224px) {
     background-size: 100% 90%;
   }
 
+  .pro-slider {
+    background-image: url("../img/mob_prod.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
   
+  .pro_title {
+    font-size: 45px !important;
+    margin-top: 20%;
+    margin-left: 1%!important;
+  }
+
+  .pro_subtitle {
+    font-size: 21px !important;
+    margin-left: 1%!important;
+  }
+
+  .pro-jumbo{
+    /* background: transparent linear-gradient(236deg, #0B3BA0 0%, #2985DB 99%, #2985DB 100%) 0% 0% no-repeat padding-box; */
+    border-radius: 44px;
+ 
+  }
+
+  .img_part {
+    padding-top:50%; 
+    width:80%;
+  }
+
+  .cart-head {
+    font-size: 20px !important;
+  }
+
+  .cart-body {
+    font-size: 20px !important;
+    text-align: left;
+    word-wrap: break-word;
+  }
+
+  .img_phone{
+    width: 30% !important;
+  }
+
 
 
   .news_section {
@@ -983,6 +1068,8 @@ and (min-width : 1224px) {
 
   .findus_phone {
     font-size: 24px !important;
+    text-align: center !important;
+    margin-left: -40%;
   }
 
   .news_title {
@@ -1056,13 +1143,40 @@ label {
     padding-left: 0% !important;
     padding-right:  0% !important;
     margin-top: -5%;
-    
   }
 
+  .section_about_title {
+    font-size: 38px !important;
+  }
+
+  .car_about_body {
+    font-size: 24px;
+  }
+
+  .about_mission_title {
+    font-size: 20px !important;
+  }
+  .about_mission_title2{
+    font-size: 38px;;
+  }
+
+  .about_desc_body {
+    font-size: 24px !important;
+  }
+
+  .vision {
+    font-size: 20px !important;
+    margin-left: 10%;
+  }
+  .vision_desc {
+    font-size: 35px;
+    margin-left: 10%;
+    display: block;
+  }
+  
+
   .carous_div {
-    border-radius: 0!important;
-    
-    
+    border-radius: 20!important;
   }
 
   .car_title {

@@ -29,7 +29,7 @@ include_once 'includes/nav.php';
     <br>
     
 </div>
-<div class="container-fluid  slid_section" data-aos="fade-up"  style="background-color:transparent; !important">
+<div class="container-fluid  slid_section"  style="background-color:transparent; !important">
 <div class="row" >
         <div class="col col-lg-12 col-md-12 col-xs-12 col-sm-6 text-center subimage" >
           WE HOLD OURSELVES RESPONSIBLE FOR THE SATISFACTION OF OUR <br>

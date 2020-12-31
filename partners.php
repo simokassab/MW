@@ -19,13 +19,13 @@ include_once 'includes/nav.php';
     </div>
 </div>
 
-<div id="accordion" style="background-color: white;">
+<div  style="background-color: white;">
     <div class="container-fluid pro_section ">
         <div class="row pro-jumbo">
-            <div class="col col-lg-1 col-md-1 col-xs-3 " >
+            <div class="col col-lg-1 col-md-1 col-xs-2 " >
                 <img src="img/vas.png"  class="img_part"  >
             </div>
-            <div class="col col-lg-10 col-md-10 col-xs-7">
+            <div class="col col-lg-10 col-md-10 col-xs-9">
                 <p class="cart-head">VAS</p>
                 <p class="cart-body"  >
                     We are experts in the VAS industry and we proudly provide comprehensive management and present multiple KPIs to enhance and maintain the VAS Sector;
@@ -41,7 +41,7 @@ include_once 'includes/nav.php';
                 </p>
                 
             </div>
-            <div class="col col-lg-1 col-md-1 col-xs-2">
+            <div class="col col-lg-1 col-md-1 col-xs-1">
                 <a class="float-right arrow" style="margin: 60% 20% 10% 10%"  id="1" >
                     <img class="ims" src="img/arrow-down.png">
                 </a>
