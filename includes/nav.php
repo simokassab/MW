@@ -12,7 +12,7 @@
         <span class="sr-only">Toggle navigation</span>
     </button>
     <div class="collapse navbar-collapse " id="navbarText">
-        <ul class="navbar-nav ml-auto nav-fill w-75">
+        <ul class="navbar-nav  nav-fill w-75">
             <li class="nav-item ">
                 <a class="nav-link " href="./about-us.php">WHO WE ARE</span></a>
             </li>

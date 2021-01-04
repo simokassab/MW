@@ -62,6 +62,10 @@
   background: transparent !important;
 }
 
+.navbar-nav { 
+  margin-left: 20%;
+}
+
 .navbar-toggler:focus {
   outline: none;
   background: transparent !important;
@@ -326,18 +330,27 @@ footer {
 .cart-body{
   font-family: GothamLight;
    font-size: 30px;
+   margin-left: 9%;
+   margin-top: -2% !important;
    /* height: 90px; */
    /* padding-left: 10%; */
    /* padding-right: 12%; */
    text-align: justify;
    word-wrap: break-word;
    overflow: hidden;
+
+ }
+
+ .arrow {
+   margin-top: -5% !important;
+   margin-right: 2% !important;
  }
 
  .cart-body_{
   font-family: GothamLight;
   font-size: 30px;
   max-height: 100%;
+  /* margin-left: 10%; */
    /* padding-left: 10%; */
    /* padding-right: 12%; */
   text-align: justify;
@@ -464,6 +477,10 @@ fieldset {
   padding-right:  5% !important;
   margin-top: -5%;
   
+}
+
+.img_phone {
+  width: 4%;
 }
 
 .containerr {
@@ -687,7 +704,7 @@ button:hover {
   color: #FFFFFF;
   font-size: 1.875em;
   float: left; 
-  margin-left: -2%
+  margin-left: 1%
 }
 
 .container_contact {
@@ -945,6 +962,16 @@ and (max-width : 1724px)  {
 
 @media only screen and (max-width : 440px) { 
   
+  .navbar-nav { 
+    margin-left:10%;
+    margin-top: 5%;
+  }
+
+  .navbar-brand img {
+    width: 50%;
+    margin-left: 50%;
+  }
+  
   .typed {
     font-size: 2.7em !important;
     margin-left: 2% !important;
@@ -1032,12 +1059,18 @@ and (max-width : 1724px)  {
   }
 
   .img_part {
-    padding-top:50%; 
-    width:80%;
+    padding-top:20%; 
+    width:30%;
   }
 
   .cart-head {
     font-size: 20px !important;
+    margin-left: -80%;
+    margin-top: 30%;
+  }
+
+  .ims {
+    margin-top: -350%;
   }
 
   .cart-body {
@@ -1046,12 +1079,22 @@ and (max-width : 1724px)  {
     word-wrap: break-word;
   }
 
-  .img_phone{
-    width: 30% !important;
+  .bodyy {
+    height: 5%;
+    max-height: 100%;
   }
 
+  .img_phone{
+    width: 10% !important;
+  }
 
-
+.findus_phone {
+  margin-left: 10% !important;
+  
+}
+.blockk{
+  margin-bottom: 10% !important;
+}
   .news_section {
     padding-left: 0% !important;
     padding-right:  0% !important;
@@ -1061,6 +1104,7 @@ and (max-width : 1724px)  {
   .contact_section {
     padding-left: 0% !important;
     padding-right:  0% !important;
+    width: 88% !important;
     margin-top: -95%;
     
   }
