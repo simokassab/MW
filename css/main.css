@@ -203,6 +203,12 @@ footer {
   line-height:100%;
   margin-left: 15%;
   margin-bottom: auto;
+  margin-top: 30% !important;
+}
+
+.hundred {
+  margin-top: 22% !important;
+  margin-left: 10%;
 }
 
 .pro_title {
@@ -953,6 +959,8 @@ and (max-width : 1724px)  {
     margin-bottom: 0 !important;
   }
 
+ 
+
   .about_subtitle {
       font-size: 1.1em !important;
       line-height:150%;
@@ -971,10 +979,14 @@ and (max-width : 1724px)  {
   }
 
   .aboutus{
-    background-image: url("../img/mob_about.PNG");
+    background-image: url("../img/about us mobile.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    min-height: 150%;
+    min-height: 120%;
+  }
+
+  .hundred {
+    margin: -20% 0 0 0 !important;
   }
 
   .newsslider {

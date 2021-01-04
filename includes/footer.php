@@ -22,5 +22,12 @@
 </nav>
 
 </body>
-
+<script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
+<script>
+    
+   $(window).on('load', function() {
+        AOS.init();
+    });
+    window.addEventListener('load', AOS.refresh)
+</script>
 </html>

@@ -18,6 +18,11 @@ include_once 'includes/nav.php';
                 grown to serve a network of more than
             </div>
         </div>
+        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6" data-aos="fade-up-left" >
+            <div class="hundred " >
+               <img src="./img/100.png" class="img-fluid">
+            </div>
+        </div>
     </div>
 </div>
 
