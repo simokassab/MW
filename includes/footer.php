@@ -1,25 +1,27 @@
-<nav class="navbar sticky-bottom navbarbottom">
-    <ul class="nav navbar-nav text-nowrap flex-row mx-md-auto nav-fill w-75" >
-        <li class="nav-item ">
-            <a class="nav-link " href="./index.php">WHO WE ARE</span></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link " href="./projects.php" > projects</a>
-        </li>
-        <li class="nav-item ">
-            <a class="nav-link " href="./news.php">news</span></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link " href="./partners.php" > partners & operators</a>
-        </li>
-        <li class="nav-item ">
-            <a class="nav-link " href="./contactus.php">contact us</span></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link " href="./careers.php" > careers</a>
-        </li>
-    </ul>
-</nav>
+<nav class="navbar navbar-expand-lg bottom" >
+    <div class=" navbar-collapse " id="navbarText">
+        <ul class="navbar-nav navbar-nav-foot  nav-fill w-75">
+            <li class="nav-item ">
+                <a class="nav-link  footlink" href="./about-us.php">WHO WE ARE</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link footlink" href="" > projects</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link footlink" href="./news.php">news</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link footlink" href="./partners.php" > partners & operators</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link footlink" href="./contact-us.php">contact us</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link footlink" href="./careers.php" > careers</a>
+            </li>
+        </ul>
+    </div>
+    </nav>
 
 </body>
 <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>

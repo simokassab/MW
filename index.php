@@ -54,7 +54,7 @@ include_once 'includes/nav.php';
         </ol>
         <div class="carousel-inner w-100" role="listbox">
           <div class="carousel-item active">
-              <div class="col-lg-4" style="border-right: 1px solid white; padding:3% 3% 3% 3%;">
+              <div class="col-lg-4 carousel-subitem" style="">
                 <div class="iconn" >
                   <img src="./img/vas.png"  class="img-fluid img_prod" style="padding-bottom: 5%;" />
                   <div class="car_title">
@@ -68,7 +68,7 @@ include_once 'includes/nav.php';
               </div>
           </div>
           <div class="carousel-item">
-            <div class="col-lg-4" style="border-right: 1px solid white; padding:3% 3% 3% 3%;">
+            <div class="col-lg-4 carousel-subitem" style="">
               <div class="iconn" >
                 <img src="./img/dcb.png" class="img-fluid img_prod" style="padding-bottom: 5%;" />
                 <div class="car_title">
@@ -81,7 +81,7 @@ include_once 'includes/nav.php';
             </div>
           </div>
           <div class="carousel-item">
-            <div class="col-lg-4" style="border-right: 1px solid white; padding:3% 3% 3% 3%;">
+            <div class="col-lg-4 carousel-subitem" style="">
               <div class="iconn" >
                 <img src="./img/megapromo.png"class="img-fluid img_prod" style="padding-bottom: 5%;" />
                 <div class="car_title">
@@ -94,7 +94,7 @@ include_once 'includes/nav.php';
             </div>
           </div>
           <div class="carousel-item">
-            <div class="col-lg-4" style="border-right: 1px solid white; padding:3% 3% 3% 3%;">
+            <div class="col-lg-4 carousel-subitem" style="">
               <div class="iconn" >
                 <img src="./img/gamification.png" class="img-fluid img_prod" style="padding-bottom: 5%;" />
                 <div class="car_title">
@@ -107,7 +107,7 @@ include_once 'includes/nav.php';
             </div>
           </div>
           <div class="carousel-item">
-            <div class="col-lg-4" style="border-right: 1px solid white; padding:3% 3% 3% 3%;">
+            <div class="col-lg-4 carousel-subitem" style="">
               <div class="iconn" >
                 <img src="./img/misscall.png" class="img-fluid img_prod" style="padding-bottom: 5%;" />
                 <div class="car_title">
@@ -120,7 +120,7 @@ include_once 'includes/nav.php';
             </div>
           </div>
           <div class="carousel-item">
-            <div class="col-lg-4" style="border-right: 1px solid white; padding:3% 3% 3% 3%;">
+            <div class="col-lg-4 carousel-subitem" style="">
               <div class="iconn" >
                 <img src="./img/rbt.png" class="img-fluid img_prod" style="padding-bottom: 5%;" />
                 <div class="car_title">
@@ -134,7 +134,7 @@ include_once 'includes/nav.php';
             </div>
           </div>
       </div>
-      <a class="carousel-control-prev  " href="#myCarousel" role="button" data-slide="prev">
+      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
         <img src="./img/back.png" class ="imgicon" width="20%"/>
       </a>
       <a class="carousel-control-next  " href="#myCarousel" role="button" data-slide="next">

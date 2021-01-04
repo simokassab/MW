@@ -112,6 +112,6 @@ include_once 'includes/nav.php';
   
 </div>
 
-<div class="section-space-padding1"></div>
+<div class="section-space-padding"></div>
 
 <?php include 'includes/footer.php'; ?>

@@ -32,7 +32,7 @@ include_once 'includes/nav.php';
                 </a>
             </div>
             <div class="bodyy">
-            <p class="cart-body"  >
+            <p class="cart-body cart-body-mobile"  id="mobile_1"  >
                 We are experts in the VAS industry and we proudly provide comprehensive management and present multiple KPIs to enhance and maintain the VAS Sector;
                 taking into 
                 <span class="moretext" id="moretext_1">
@@ -60,7 +60,7 @@ include_once 'includes/nav.php';
                 </a>
             </div>
             <div class="bodyy">
-            <p class="cart-body"  >
+            <p class="cart-body cart-body-mobile" id="mobile_2"  >
                 We are experts in the VAS industry and we proudly provide comprehensive management and present multiple KPIs to enhance and maintain the VAS Sector;
                 taking into 
                 <span class="moretext" id="moretext_2">
@@ -79,17 +79,35 @@ include_once 'includes/nav.php';
 </div>
 
     <script>
+       
     $('.arrow').click(function() {
-        var id = $(this).attr("id");
-        $('#moretext_'+id).slideToggle();
-        var src = $('.arrow').html();
-      //  alert(src);
-        if (src.indexOf("arrow-down") >= 0){
-            $('#'+id).html(' <img class="ims" src="img/arrow-up.png">');
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+            var id = $(this).attr("id");
+            var mobile = $("")
+            $('#mobile_'+id).slideToggle();
+            $('#moretext_'+id).slideToggle();
+            var src = $('.arrow').html();
+
+            if (src.indexOf("arrow-down") >= 0){
+                $('#'+id).html(' <img class="ims" src="img/arrow-up.png">');
+            }
+            else {
+                $('#'+id).html(' <img class="ims" src="img/arrow-down.png">');
+            }
+
         }
         else {
-            $('#'+id).html(' <img class="ims" src="img/arrow-down.png">');
+            var id = $(this).attr("id");
+            $('#moretext_'+id).slideToggle();
+            var src = $('.arrow').html();
+            if (src.indexOf("arrow-down") >= 0){
+                $('#'+id).html(' <img class="ims" src="img/arrow-up.png">');
+            }
+            else {
+                $('#'+id).html(' <img class="ims" src="img/arrow-down.png">');
+            }
         }
+       
     });
     </script>
     <!-- <script>

@@ -31,7 +31,7 @@
   }
  html,
  body {
-
+  margin: 0;
   height: 100%;
   font-family: 'GothamLight';
   background: rgb(8,33,85);
@@ -64,6 +64,10 @@
 
 .navbar-nav { 
   margin-left: 20%;
+}
+
+.navbar-nav-foot {
+  margin-left: 12% !important;
 }
 
 .navbar-toggler:focus {
@@ -125,13 +129,37 @@
   text-transform: uppercase;
 }
 
+.carousel-indicators .active:before {
+  background-color: white !important;
+}
+
+.carousel-indicators li:before {
+  background-color: #94C2ED !important;
+}
+
+
+
 .nav-link:hover {
   color: #001352;
+}
+
+.footlink:hover {
+  color: #267CD4 !important;
 }
 
 .logo_ {
   width: 80%;
   max-width: 80%;
+}
+
+.carousel-subitem {
+  border-right: 1px solid white; 
+  padding:3% 3% 3% 3%;
+}
+
+
+.blockk{
+  margin-bottom: 4% !important;
 }
 
 
@@ -310,6 +338,7 @@ footer {
 .img_part {
   padding-top:50%; 
   width:60%;
+  
 }
 
 .pro-jumbo{
@@ -331,7 +360,7 @@ footer {
   font-family: GothamLight;
    font-size: 30px;
    margin-left: 9%;
-   margin-top: -2% !important;
+   margin-top: -5% ;
    /* height: 90px; */
    /* padding-left: 10%; */
    /* padding-right: 12%; */
@@ -361,6 +390,8 @@ footer {
  .moretext {
   display: none;
 }
+
+
 
 #module {
   max-width: 100%;
@@ -419,8 +450,8 @@ footer {
   border: 2px solid #FFFFFF;
   border-radius: 42px;
   opacity: 1;
-  padding: 15px 25px 15px 25px;
-  font-size: 1.25em;
+  padding: 10px 22px 10px 22px;
+  font-size: 1em;
   cursor: pointer;
 }
 
@@ -451,7 +482,8 @@ footer {
   color: white;
   font-family: 'GothamMeduim';
   font-size: 1.6875em;
-  margin-top: -10%;
+  margin-top: -20%;
+  width: 90% !important;
 }
 
 fieldset {
@@ -460,9 +492,11 @@ fieldset {
 
 
 .slid_section {
-  padding-left: 5% !important;
-  padding-right:  5% !important;
+  padding-left: 4% !important;
+  padding-right:  4% !important;
   background-color: white;
+
+ 
 }
 
 .pro_section {
@@ -967,6 +1001,10 @@ and (max-width : 1724px)  {
     margin-top: 5%;
   }
 
+  .cart-body-mobile {
+    display: none ;
+  }
+
   .navbar-brand img {
     width: 50%;
     margin-left: 50%;
@@ -1020,6 +1058,7 @@ and (max-width : 1724px)  {
     background-image: url("../img/news mobile.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    background-color: white !important;
   }
 
   .contactslider {
@@ -1038,6 +1077,12 @@ and (max-width : 1724px)  {
     background-image: url("../img/mob_prod.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
+  }
+
+  .carousel-subitem {
+    border-right: 0 !important; 
+    padding:0 !important;
+    margin: 0 0 0 5% !important;
   }
 
   
@@ -1099,6 +1144,8 @@ and (max-width : 1724px)  {
     padding-left: 0% !important;
     padding-right:  0% !important;
     margin-top: -105%;
+    width: 96% !important;
+    background-color: white !important;
   }
 
   .contact_section {
@@ -1187,6 +1234,15 @@ label {
   }
   .imgicon{
     width: 60% !important;
+   
+  }
+
+  .carousel-control-prev {
+    margin-left: 4% !important;
+  }
+
+  .carousel-control-next {
+    margin-right: 4% !important;
   }
 
   .learn_products {
@@ -1199,6 +1255,7 @@ label {
     padding-left: 0% !important;
     padding-right:  0% !important;
     margin-top: -5%;
+    width: 92% !important;
   }
 
   .section_about_title {
