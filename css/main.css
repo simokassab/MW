@@ -180,11 +180,11 @@ footer {
 }
 
 .homeslider {
-  background-image: url("../img/sliderhomee.png");
+  background-image: url("../img/home11.png");
   background-repeat: no-repeat;
   
   background-size: 100% 100%;
-  min-height: 150%;
+  min-height: 140%;
   
 }
 
