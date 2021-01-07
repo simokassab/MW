@@ -129,15 +129,32 @@
   text-transform: uppercase;
 }
 
-.carousel-indicators .active:before {
-  background-color: white !important;
+
+.owl-prev {
+  width: 55px;
+  height: 55px;
+  border-radius: 100px !important;
+  background-color: #FFFFFF !important;
+  position: absolute;
+  top: 20%;
+  margin-left: -4% !important;
+  display: block !important;
+  font-size: 24px !important;
 }
 
-.carousel-indicators li:before {
-  background-color: #94C2ED !important;
+.owl-next {
+  width: 55px;
+  height: 55px;
+  border-radius: 100px !important;
+  background-color: #FFFFFF !important;
+  position: absolute;
+  top: 20%;
+  margin-left: 100% !important;
+  display: block !important;
+  border:0px solid black;
+  font-size: 24px !important;
 }
-
-
+.owl-prev i, .owl-next i {transform : scale(1,6); color: #ccc;}
 
 .nav-link:hover {
   color: #001352;
@@ -168,6 +185,7 @@ footer {
   bottom: 0;
   width: 100%;
  }
+ 
  .item {
   width: 200px;
   height: 200px;
@@ -430,7 +448,7 @@ footer {
   font-size: 4.68em !important;
   line-height:100%;
   margin-left: 15%;
-  margin-top: 30%;
+  margin-top: 20%;
   margin-bottom: auto;
 }
 
@@ -482,7 +500,7 @@ footer {
   color: white;
   font-family: 'GothamMeduim';
   font-size: 1.6875em;
-  margin-top: -20%;
+  margin-top: 15%;
   width: 90% !important;
 }
 
@@ -861,61 +879,26 @@ th, td {
 }
 
 .learn_products {
-  margin-top: 2%;
+  margin-top: 0%;
 }
 
 
 /* CAROUSEL */
-@media (max-width: 992px) {
-  .carousel-inner .carousel-item > div {
-      display: none;
-  }
-  .carousel-inner .carousel-item > div:first-child {
-      display: block;
-  }
-}
 
-.carousel-inner .carousel-item.active,
-.carousel-inner .carousel-item-next,
-.carousel-inner .carousel-item-prev {
-  display: flex;
-  justify-content: center;
-}
-
-@media (min-width: 992px) {
-  .carousel-inner .carousel-item-right.active,
-  .carousel-inner .carousel-item-next {
-    transform: translateX(100%);
-  }
-  
-  .carousel-inner .carousel-item-left.active, 
-  .carousel-inner .carousel-item-prev {
-    transform: translateX(-33%);
-  }
-}
-
-.carousel-inner .carousel-item-right,
-.carousel-inner .carousel-item-left{ 
-  transform: translateX(80%);
-}
-
-.carousel-control-prev {
-  left: -7.5% !important;
-}
-
-.carousel-control-next {
-  right: -7.5% !important;
-}
-
-td img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-
-}
 
 /* responsive */
-
+@media only screen
+and (max-width : 1550px)  { 
+  .nav-link {
+    font-size: 16px !important;
+  }
+}
+@media only screen
+and (max-width : 1350px)  { 
+  .nav-link {
+    font-size: 14px !important;
+  }
+}
 /* Desktops and laptops ----------- */
 @media only screen
 and (max-width : 1724px)  {
@@ -1011,9 +994,9 @@ and (max-width : 1724px)  {
   }
   
   .typed {
-    font-size: 2.7em !important;
+    font-size: 2.4em !important;
     margin-left: 2% !important;
-    margin-top: 20% !important ;
+    margin-top: 10% !important ;
     margin-bottom: 0 !important;
   }
 
@@ -1065,6 +1048,7 @@ and (max-width : 1724px)  {
     background-image: url("../img/contact-iphone.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    min-height: 120%;
   }
 
   .careersslider {
@@ -1078,6 +1062,19 @@ and (max-width : 1724px)  {
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
+
+  .careers_section {
+    margin-top: -50% !important;
+  }
+
+  .findus_div {
+    border-radius: 20px 20px 0 0 !important;
+    margin-top: -10%;
+    width: 100% !important;
+  
+  }
+
+  
 
   .carousel-subitem {
     border-right: 0 !important; 
@@ -1149,10 +1146,10 @@ and (max-width : 1724px)  {
   }
 
   .contact_section {
-    padding-left: 0% !important;
-    padding-right:  0% !important;
-    width: 88% !important;
-    margin-top: -95%;
+   
+    width: 97% !important;
+    margin-top: -80%;
+    padding: 0 !important;
     
   }
 
@@ -1204,8 +1201,7 @@ label {
 }
 
   .subtitle {
-    font-size: 1.5em !important;
-    line-height:150%;
+    font-size: 24px !important;
     margin-left: 2%;
   }
   
@@ -1214,14 +1210,16 @@ label {
     border-radius: 45px;
 
     padding: 15px 25px 15px 25px;
-    font-size: 1.125em;
+    font-size: 15px !important;
     cursor: pointer;
+    letter-spacing: 3px !important;
   }
 
   .subimage {
-    margin-top: -20%;
-    font-size: 1.1875em;
+    margin-top: 120%;
+    font-size: 18px !important;
     line-height: 200%;
+    letter-spacing: 2.66px;
   }
 
   fieldset {
@@ -1247,6 +1245,7 @@ label {
 
   .learn_products {
     /* margin-top: 30%; */
+    text-align: center !;
   }
 
   
@@ -1254,8 +1253,8 @@ label {
   .slid_section {
     padding-left: 0% !important;
     padding-right:  0% !important;
-    margin-top: -5%;
-    width: 92% !important;
+    margin-top: 10%;
+    /* width: 92% !important; */
   }
 
   .section_about_title {
@@ -1289,7 +1288,7 @@ label {
   
 
   .carous_div {
-    border-radius: 20!important;
+    border-radius: 0!important;
   }
 
   .car_title {

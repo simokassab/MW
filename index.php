@@ -4,8 +4,13 @@ include_once 'includes/nav.php';
 
 ?>
 
-<div class="container-fluid homeslider"  data-aos="slide-up" >
-    <div class="row h-75">
+<style>
+  
+</style>
+
+<div class="container-fluid homeslider"   >
+  <div id='sliderrr' class="owl-carousel owl-theme">
+  <div class="row h-75" style="padding-bottom: 10%;">
         <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
             <div class="typed">
             
@@ -25,129 +30,107 @@ include_once 'includes/nav.php';
             
         </div>
     </div>
-    <br>
-    <br>
-    
-</div>
-<div class="container-fluid  slid_section"  style="background-color:transparent; !important">
-<div class="row" >
+    <div class="row h-75" style="padding-bottom: 10%;">
+        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
+            <div class="typed">
+            
+                WE ARE <br>
+                THE MASTER <br>
+                AGGREGATOR 
+            </div>
+            <br>
+            <div class="subtitle"  >
+                for Zain Iraq and Jawwal Palestine with connections with other mobile carriers in the MENA region.
+                <br>
+                <br>
+                <a class='learnmore'>
+                    LEARN MORE
+                </a>
+            </div>
+            
+        </div>
+    </div>
+
+  </div> 
+  
+    <div class="row" >
         <div class="col col-lg-12 col-md-12 col-xs-12 col-sm-6 text-center subimage" >
           WE HOLD OURSELVES RESPONSIBLE FOR THE SATISFACTION OF OUR <br>
           CUSTOMERS AND PARTNERS, BY HONORING OUR COMMITMENTS, <Br> PROVIDING 
           RESULTS, AND STRIVING FOR THE HIGHEST QUALITY. 
         </div>
     </div>
-  <div class="row mx-auto my-auto">
-    <div id="myCarousel" class="carousel slide w-100 carous_div" data-ride="carousel" >
+</div>
+<div class="container-fluid  slid_section"  style="background-color:transparent; !important">
+    <div class="carousel slide w-100 carous_div"  >
         <span class="section_title">
             PRODUCTS
         </span>
       <div class="section-space-padding"></div>
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-          <li data-target="#myCarousel" data-slide-to="3"></li>
-          <li data-target="#myCarousel" data-slide-to="4"></li>
-          <li data-target="#myCarousel" data-slide-to="5"></li>
-          <li data-target="#myCarousel" data-slide-to="6"></li>
-        </ol>
-        <div class="carousel-inner w-100" role="listbox">
-          <div class="carousel-item active">
-              <div class="col-lg-4 carousel-subitem" style="">
-                <div class="iconn" >
-                  <img src="./img/vas.png"  class="img-fluid img_prod" style="padding-bottom: 5%;" />
-                  <div class="car_title">
-                    vas 
-                  </div>
-                  <div class="car_body">
-                  We are experts in the VAS industry 
-                  and we proudly provide comprehensive....
-                  </div>
-                </div>
+      <div class="owl-carousel owl-theme" id="products">
+        <!--  -->
+        <div>
+              <img src="./img/vas.png"  class="img-fluid img_prod" style="padding-bottom: 5%;" />
+              <div class="car_title">
+                vas 
               </div>
-          </div>
-          <div class="carousel-item">
-            <div class="col-lg-4 carousel-subitem" style="">
-              <div class="iconn" >
-                <img src="./img/dcb.png" class="img-fluid img_prod" style="padding-bottom: 5%;" />
-                <div class="car_title">
-                  dcb 
-                </div>
-                <div class="car_body">
+              <div class="car_body">
+              We are experts in the VAS industry 
+              and we proudly provide comprehensive....
+              </div>
+        </div>
+        <div >
+              <img src="./img/dcb.png" class="img-fluid img_prod" style="padding-bottom: 5%;" />
+              <div class="car_title">
+                dcb 
+              </div>
+              <div class="car_body">
+              Direct carrier billing (“DCB”) is an online payment method. It allows users to make purchases.....
+              </div>
+        </div>
+        <div >
+              <img src="./img/megapromo.png"class="img-fluid img_prod" style="padding-bottom: 5%;" />
+              <div class="car_title">
+                mega promo 
+              </div>
+              <div class="car_body">
+              Mega Promo provides personalized and relevant rewards to Operators’ customers every....
+              </div>
+        </div>
+        <div>
+              <img src="./img/gamification.png" class="img-fluid img_prod" style="padding-bottom: 5%;" />
+              <div class="car_title">
+                gamification 
+              </div>
+              <div class="car_body">
                 Direct carrier billing (“DCB”) is an online payment method. It allows users to make purchases.....
-                </div>
               </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="col-lg-4 carousel-subitem" style="">
-              <div class="iconn" >
-                <img src="./img/megapromo.png"class="img-fluid img_prod" style="padding-bottom: 5%;" />
-                <div class="car_title">
-                  mega promo 
-                </div>
-                <div class="car_body">
-                Mega Promo provides personalized and relevant rewards to Operators’ customers every....
-                </div>
+        </div>
+        <div>
+              <img src="./img/misscall.png" class="img-fluid img_prod" style="padding-bottom: 5%;" />
+              <div class="car_title">
+              Missed-call Notification
               </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="col-lg-4 carousel-subitem" style="">
-              <div class="iconn" >
-                <img src="./img/gamification.png" class="img-fluid img_prod" style="padding-bottom: 5%;" />
-                <div class="car_title">
-                  gamification 
-                </div>
-                <div class="car_body">
-                  Direct carrier billing (“DCB”) is an online payment method. It allows users to make purchases.....
-                </div>
+              <div class="car_body">
+                Missed-call notification service offers the operator eligible prepaid subscribers the ability to…
               </div>
-            </div>
+        </div>
+        <div>
+          <img src="./img/rbt.png" class="img-fluid img_prod" style="padding-bottom: 5%;" />
+          <div class="car_title">
+            digital rbt
           </div>
-          <div class="carousel-item">
-            <div class="col-lg-4 carousel-subitem" style="">
-              <div class="iconn" >
-                <img src="./img/misscall.png" class="img-fluid img_prod" style="padding-bottom: 5%;" />
-                <div class="car_title">
-                Missed-call Notification
-                </div>
-                <div class="car_body">
-                  Missed-call notification service offers the operator eligible prepaid subscribers the ability to…
-                </div>
-              </div>
-            </div>
+          <div class="car_body">
+          Internet-age consumers expect… Modern app-based experiences…
           </div>
-          <div class="carousel-item">
-            <div class="col-lg-4 carousel-subitem" style="">
-              <div class="iconn" >
-                <img src="./img/rbt.png" class="img-fluid img_prod" style="padding-bottom: 5%;" />
-                <div class="car_title">
-                 digital rbt
-                </div>
-                <div class="car_body">
-                Internet-age consumers expect… Modern app-based experiences…
-
-                </div>
-              </div>
-            </div>
-          </div>
+        </div>
+        <!--  -->
       </div>
-      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-        <img src="./img/back.png" class ="imgicon" width="20%"/>
-      </a>
-      <a class="carousel-control-next  " href="#myCarousel" role="button" data-slide="next">
-      <img src="./img/forward.png" class ="imgicon" width="20%"/>
-      </a>
-      <div>
-        
-      </div>
-    </div>
-    <!-- <a class='float-right learnmore learn_products' >
+      <!-- <a class=' learnmore learn_products' >
             LEARN MORE
         </a> -->
-  </div>
+    </div>
+    
   
 </div>
 <div  data-aos="slide-up">
@@ -164,7 +147,7 @@ include_once 'includes/nav.php';
 </div>
 
 
-<div class="operators-table" style="">
+<div class="operators-table" >
   <!-- <div class="container-fluid">
       <div class="row" style="border: 1px solid black; border-radius: 10px !important;">
       <div class="col" style="margin-left:8%;">1</div>

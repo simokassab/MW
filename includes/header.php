@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./css/toggle-switch.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">    
     <script   src="./js/jquery-3.3.1.js"   crossorigin="anonymous"></script>
     <script   src="./js/scripts.js"   crossorigin="anonymous"></script>
     

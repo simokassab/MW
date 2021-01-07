@@ -24,9 +24,7 @@ include_once 'includes/nav.php';
 
 <!-- Slider Carousel -->
 <div class="container-fluid  contact_section" style="background-color:white;">
-      
-  <div class="row ">
-    <div  class="w-100 findus_div">
+    <div  class="findus_div">
           <div class="contact_title">
               WEHRE YOU CAN FIND US
           </div>
@@ -44,7 +42,7 @@ include_once 'includes/nav.php';
             <img src="./img/rbt.png" class="img-fluid img_phone" style="float: left;" />
             <p class="findus_phone"  >+961 1 333 675 </p>
           </div>
-          <div class=" col-lg-6 col-md-12 col-xs-11 blockk">
+          <div class=" col-lg-6 col-md-12 col-xs-11 blockk ">
             <p class="findus_title">Jordan office</p>
             <p class="findus_subtitle">Amman, Souifiya, Zahran Street, Jawharat Al Souifiya Bldg, 4th floor, Jordan</p>
             <img src="./img/rbt.png" class="img-fluid img_phone" style="float: left;" />
@@ -85,9 +83,8 @@ include_once 'includes/nav.php';
           </div>
         </div> -->
     </div>
-  </div>
 </div>
-<div class="section-space-padding1"></div>
+
 
 
 <?php include 'includes/footer.php'; ?>
