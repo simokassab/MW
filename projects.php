@@ -34,13 +34,13 @@ $products = getProducts();
                     <a class="float-right arrow arr_'.$p['id'].'"  id="'.$p['id'].'" >
                         <img class="ims" src="img/arrow-down.png">
                     </a>
-                   
-                <p class="cart-body cart-body-mobile"  id="mobile_'.$p['id'].'"  >
-                    '.implode(' ', array_slice(explode(' ', $p['subtitle']), 0, 26)).'
-                    <span class="moretext" id="moretext_'.$p['id'].'">
-                    '.implode(' ', array_slice(explode(' ', $p['subtitle']), 26, strlen($p['subtitle']))).'
-                    </span>
-                </p>
+                    
+                    <div class="cart-body cart-body-mobile"  id="mobile_'.$p['id'].'"  >
+                        '.implode(' ', array_slice(explode(' ', $p['subtitle']), 0, 26)).'
+                        <span class="moretext" id="moretext_'.$p['id'].'">
+                        '.implode(' ', array_slice(explode(' ', $p['subtitle']), 26, strlen($p['subtitle']))).'
+                        </span>
+                    </div>
                 </div>
                 
             </div>
@@ -70,7 +70,6 @@ $products = getProducts();
                    $("#"+id).html(\' <img class="ims" src="img/arrow-up.png">\');
                }
                else {
-                   alert("dd")
                    $("#"+id).html(\' <img class="ims" src="img/arrow-down.png">\');
                }
            }

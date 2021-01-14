@@ -15,11 +15,11 @@ define("MAIN_URL", "http://".$_SERVER['SERVER_NAME']."/SMS");
             </div>
             <div class="form-group">
                 <label>Subtitle</label>
-                <input type="text" class="form-control" placeholder="Subtitle" required name="subtitle" value="{{ $us->subtitle }}">
+                <textarea rows="10" class="form-control" placeholder="Subtitle" id="subtitle" required name="subtitle" >{{ $us->subtitle }}</textarea>
             </div>
             <div class="form-group">
                 <label>Change Icon</label>
-                <input required type="file" class="form-control" name="photo" placeholder="Photo" >
+                <input  type="file" class="form-control" name="photo" placeholder="Photo" >
                 <br>
                 <div>
                     <?php

@@ -31,7 +31,7 @@
     
     <div class="form-group">
         <label>Subtitle</label>
-        <input type="text" class="form-control" placeholder="Subtitle" required name="subtitle">
+        <textarea rows="10" class="form-control" placeholder="Subtitle" id="subtitle" required name="subtitle"></textarea>
     </div>
     <div class="form-group">
         <label>Icon</label>

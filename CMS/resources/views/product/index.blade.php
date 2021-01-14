@@ -34,9 +34,9 @@
             <tr>
                 <td>{{$u->title}}</td>
                 <td>{{$u->subtitle}}</td>
-                <td>
+                <td style="background-color: #0F45A8;">
                     <img class="img-responsive img-rounded" src="./products/{{$u->image}}"
-                    style="max-height:70px; max-width: 70px;"/>
+                    style="max-height:70px; max-width: 70px; "/>
                     </td>
                 @if($u->active ==1)
                     <td style="color:#45A163; font-weight: bold;">Active</td>

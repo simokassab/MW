@@ -47,13 +47,18 @@ class NewsController extends Controller
         request()->validate([
             'photo' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:6048',
         ]);
-        $thumb = $request->file('photo');
+        $thumb = $request->file('thumb');
         $thumbimage = $thumb->getClientOriginalName();
-        $thumb->move(public_path('/news/'), $thumbimage);
+        $thumb->move(public_path('/news/thumbnails/'), $thumbimage);
+
+        $image = $request->file('photo');
+        $img = $image->getClientOriginalName();
+        $image->move(public_path('/news/'), $img);
         DB::table('news')->insert([
             'title' => $request->input('title'),
             'subtitle' => $request->input('subtitle'),
-            'image' => $thumbimage,
+            'thumb' => $thumbimage,
+            'image' => $img,
             'date' => $request->input('date')
         ]);
         return redirect('/new')->with('success', 'New has been Created');
@@ -92,7 +97,46 @@ class NewsController extends Controller
     public function update(Request $request, $id)
     {
         $file = $request->file('photo');
-        if ($file != '') {
+        $thumb = $request->file('thumb');
+        if (($file != '') && ($thumb != '')) {
+            $this->validate($request, [
+                'photo' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:6048',
+            ]);
+            $this->validate($request, [
+                'thumb' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:6048',
+            ]);
+            $nameimg = $file->getClientOriginalName();
+            $file->move(public_path('/news/'), $nameimg);
+
+            $thum = $thumb->getClientOriginalName();
+            $thumb->move(public_path('/news/thumbnails/'), $thum); 
+
+            DB::table('news')
+            ->where('id', $id)
+            ->update([
+                'title' => $request->input('title'),
+                'subtitle' => $request->input('subtitle'),
+                'thumb' => $thum,
+                'image' =>  $nameimg,
+                'date' => $request->input('date')
+            ]);
+        }
+        else if (($file == '') && ($thumb != '')){
+            $this->validate($request, [
+                'thumb' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:6048',
+            ]);
+            $thum = $thumb->getClientOriginalName();
+            $thumb->move(public_path('/news/thumbnails/'), $thum); 
+            DB::table('news')
+            ->where('id', $id)
+            ->update([
+                'title' => $request->input('title'),
+                'subtitle' => $request->input('subtitle'),
+                'thumb' => $thum,
+                'date' => $request->input('date')
+            ]);
+        }
+        else if(($file != '') && ($thumb == '')){
             $this->validate($request, [
                 'photo' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:6048',
             ]);
@@ -113,7 +157,6 @@ class NewsController extends Controller
             ->update([
                 'title' => $request->input('title'),
                 'subtitle' => $request->input('subtitle'),
-                // 'image' =>  $nameimg,
                 'date' => $request->input('date')
             ]);
         }

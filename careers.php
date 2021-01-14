@@ -23,7 +23,12 @@ include_once 'includes/nav.php';
 
 <!-- Slider Carousel -->
 <div class="careers_section">
-    <p class="careers_title">
+  <?php 
+    if(isset($_GET['m'])){
+      echo "<span style='color:green'>Your Message has been sent</span>";
+    }
+  ?>
+    <p class="careers_title" id="careers_title">
       contact details
     </p>
     <p class="careers_subtitle">
@@ -32,7 +37,7 @@ include_once 'includes/nav.php';
     <div class="section-space-padding"></div>
 
     <div >
-      <form class="form" action="" method="">
+      <form class="form" action="./app/sendcareers.php" method="post" enctype="multipart/form-data">
         <div class="row">
           <div class=" col-lg-6 col-md-6 col-xs-12">
             <div class="row">
@@ -52,10 +57,10 @@ include_once 'includes/nav.php';
                 <div class="form-group">
                 <label for="filee">upload your cv</label>
                   <div class="">
-                    <input type="file" name="cv" class="input-file" required>
+                    <input type="file" name="cv" class="input-file" accept=".pdf,.doc,.docx" required>
                     <div class="input-group mb-3">
                     
-                      <input type="text" class="form-control filee"    name="filee"  >
+                      <input type="text" class="form-control filee" required    name="filee"  >
                       <div class="input-group-append">
                         <button class="btn upload-field" type="button" id="button-addon2">UPLOAD</button>
                       </div>
@@ -74,7 +79,7 @@ include_once 'includes/nav.php';
             </div>
           </div>
         </div>
-        
+
       </form>
     </div>
 </div>

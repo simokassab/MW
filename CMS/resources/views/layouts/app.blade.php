@@ -16,7 +16,7 @@ define('SITE_URL', 'http://' . $_SERVER['SERVER_NAME'] . '/mediaworld/CMS/public
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
         integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
 
-        <link rel="stylesheet" href="{{ asset('css/editor.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/richtext.min.css') }}">
     <script src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
@@ -40,11 +40,11 @@ define('SITE_URL', 'http://' . $_SERVER['SERVER_NAME'] . '/mediaworld/CMS/public
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.html5.min.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <script src="{{ asset('js/editor.js') }}"></script>
+    <script src="{{ asset('js/jquery.richtext.js') }}"></script>
 
     <script>
         $(document).ready(function(e) {
-            // $("#subtitle").Editor(); 
+            $("#subtitle").richText(); 
             $('#users').DataTable({
                 responsive: true,
                 "pagingType": "full_numbers"

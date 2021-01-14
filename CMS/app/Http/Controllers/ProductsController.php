@@ -98,14 +98,23 @@ class ProductsController extends Controller
             ]);
             $nameimg = $file->getClientOriginalName();
             $file->move(public_path('/products/'), $nameimg);
-        }
-        DB::table('products')
+            DB::table('products')
             ->where('id', $id)
             ->update([
                 'title' => $request->input('title'),
                 'subtitle' => $request->input('subtitle'),
                 'image' =>  $nameimg
             ]);
+        }
+        else {
+            DB::table('products')
+            ->where('id', $id)
+            ->update([
+                'title' => $request->input('title'),
+                'subtitle' => $request->input('subtitle')
+            ]);
+        }
+       
             return redirect('/product')->with('success', 'product UPDATED !');
     }
 

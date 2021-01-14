@@ -34,6 +34,10 @@
         <textarea  class="form-control" placeholder="Subtitle" required name="subtitle" id="subtitle" rows="8"></textarea>
     </div>
     <div class="form-group">
+        <label>Thumbnail (680x440)</label>
+        <input required type="file" class="form-control" name="thumb" placeholder="Thumb" >
+    </div>
+    <div class="form-group">
         <label>Image</label>
         <input required type="file" class="form-control" name="photo" placeholder="Photo" >
     </div>
