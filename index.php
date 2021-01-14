@@ -1,7 +1,11 @@
 <?php 
 include_once 'includes/header.php';
 include_once 'includes/nav.php';
+include 'app/getsliders.php';
+include 'app/getproducts.php';
 
+$sliders = getSliders();
+$products = getProducts();
 ?>
 
 <style>
@@ -10,47 +14,27 @@ include_once 'includes/nav.php';
 
 <div class="container-fluid homeslider"   >
   <div id='sliderrr' class="owl-carousel owl-theme">
-  <div class="row h-75" style="padding-bottom: 10%;">
+    <?php 
+      foreach ($sliders as $s){
+        echo '<div class="row h-75" style="padding-bottom: 10%;">
         <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
             <div class="typed">
-            
-                WE ARE <br>
-                THE MASTER <br>
-                AGGREGATOR 
+              '.$s['title'].'
             </div>
             <br>
             <div class="subtitle"  >
-                for Zain Iraq and Jawwal Palestine with connections with other mobile carriers in the MENA region.
+            '.$s['subtitle'].'
                 <br>
                 <br>
-                <a class='learnmore'>
+                <a class="learnmore">
                     LEARN MORE
                 </a>
             </div>
             
         </div>
-    </div>
-    <div class="row h-75" style="padding-bottom: 10%;">
-        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
-            <div class="typed">
-            
-                WE ARE <br>
-                THE MASTER <br>
-                AGGREGATOR 
-            </div>
-            <br>
-            <div class="subtitle"  >
-                for Zain Iraq and Jawwal Palestine with connections with other mobile carriers in the MENA region.
-                <br>
-                <br>
-                <a class='learnmore'>
-                    LEARN MORE
-                </a>
-            </div>
-            
-        </div>
-    </div>
-
+    </div>';
+      }
+    ?>
   </div> 
   
     <div class="row" >
@@ -69,61 +53,20 @@ include_once 'includes/nav.php';
       <div class="section-space-padding"></div>
       <div class="owl-carousel owl-theme" id="products">
         <!--  -->
-        <div>
-              <img src="./img/vas.png"  class="img-fluid img_prod" style="padding-bottom: 5%;" />
-              <div class="car_title">
-                vas 
-              </div>
-              <div class="car_body">
-              We are experts in the VAS industry 
-              and we proudly provide comprehensive....
-              </div>
-        </div>
-        <div >
-              <img src="./img/dcb.png" class="img-fluid img_prod" style="padding-bottom: 5%;" />
-              <div class="car_title">
-                dcb 
-              </div>
-              <div class="car_body">
-              Direct carrier billing (“DCB”) is an online payment method. It allows users to make purchases.....
-              </div>
-        </div>
-        <div >
-              <img src="./img/megapromo.png"class="img-fluid img_prod" style="padding-bottom: 5%;" />
-              <div class="car_title">
-                mega promo 
-              </div>
-              <div class="car_body">
-              Mega Promo provides personalized and relevant rewards to Operators’ customers every....
-              </div>
-        </div>
-        <div>
-              <img src="./img/gamification.png" class="img-fluid img_prod" style="padding-bottom: 5%;" />
-              <div class="car_title">
-                gamification 
-              </div>
-              <div class="car_body">
-                Direct carrier billing (“DCB”) is an online payment method. It allows users to make purchases.....
-              </div>
-        </div>
-        <div>
-              <img src="./img/misscall.png" class="img-fluid img_prod" style="padding-bottom: 5%;" />
-              <div class="car_title">
-              Missed-call Notification
-              </div>
-              <div class="car_body">
-                Missed-call notification service offers the operator eligible prepaid subscribers the ability to…
-              </div>
-        </div>
-        <div>
-          <img src="./img/rbt.png" class="img-fluid img_prod" style="padding-bottom: 5%;" />
-          <div class="car_title">
-            digital rbt
-          </div>
-          <div class="car_body">
-          Internet-age consumers expect… Modern app-based experiences…
-          </div>
-        </div>
+        <?php 
+          foreach ($products as $p){
+            echo '<div>
+                      <img src="./CMS/public/products/'.$p['image'].'"  class="img-fluid img_prod" style="padding-bottom: 5%;" />
+                      <div class="car_title">
+                        '.$p['title'].'
+                      </div>
+                      <div class="car_body">
+                      '.implode(' ', array_slice(explode(' ', $p['subtitle']), 0, 18)).'...
+                      </div>
+                </div>';
+          }
+        ?>
+
         <!--  -->
       </div>
       <!-- <a class=' learnmore learn_products' >

@@ -31,15 +31,11 @@
     
     <div class="form-group">
         <label>Subtitle</label>
-        <input type="text" class="form-control" placeholder="Subtitle" required name="subtitle">
+        <textarea  class="form-control" placeholder="Subtitle" required name="subtitle" id="subtitle" rows="8"></textarea>
     </div>
     <div class="form-group">
         <label>Image</label>
         <input required type="file" class="form-control" name="photo" placeholder="Photo" >
-    </div>
-    <div class="form-group">
-        <label>Subtitle</label>
-        <input type="text" class="form-control" placeholder="Subtitle" required name="subtitle">
     </div>
     <div class="form-group">
         <label>Date</label>

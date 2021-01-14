@@ -1,7 +1,12 @@
 <?php 
 include_once 'includes/header.php';
 include_once 'includes/nav.php';
+include 'app/getnew.php';
 
+if(isset($_GET['id'])){
+  $new = getNewById($_GET['id']);
+}
+// $new = 
 ?>
 
 <div class="container-fluid newsslider">
@@ -28,32 +33,21 @@ include_once 'includes/nav.php';
       <div class="section-space-padding"></div>
       <div class="row">
         <div class="col col-lg-12 col-md-12 col-xs-12">
-        <a href="" class="news_readmore" ><i class="fas fa-arrow-left" ></i> &nbsp;back </a><br>
-            <img class="img-fluid news_img" src="./img/new1.png"  style="padding-top: 5% !important; padding-bottom: 3% !important;"/>
-            <p class="news_title">
-            Jawwal partners with Media World to manage its VAS services introducing the most innovative solutions
-
-            </p>
-            <p class="news_subtitle">
-            Palestine –September 2020: Jawwal Palestine, part Of Paltel Group, recently signed a Master Aggregation agreement with 
-            Media World Company a leading telecommunication and digital firm. As per the agreement,
-             Media World will manage the complete portfolio of Jawwal value added services (VAS) in Palestine, 
-             introducing innovative solutions to the mobile network. 
-             The agreement was signed by Abdulmajeed Melhem General Manager of Jawwal Company and Dawsar Charchafchi CEO of media world . <br><br>
-
-Jawwal GM, Abdulmajeed Melhem said: “We believe that the aggregation is in line with our vision. Using Media World’s centralized platform will help
- us providing the most advanced and innovative VAS services to our customers, improve the quality of competitive services provided, speed up the 
- launch of services and eventually growing our VAS service portfolio. In fact, Our decision is based on our confidence in Media World’s proven 
- capacity and experience in managing similar advanced and highly innovative services”. <br>
-“Our partnership is an excellent opportunity, and together with Jawwal we will lead the way for the telecommunications sector. 
-As technology continues to evolve following new trends, we believe in investing, building and enhancing the current services 
-moving them towards VAS digitalization. This is the future”, said Dawsar Charchafchi, CEO of Media World. <br>
-Media World has set up a technology platform-Master Aggregation Platform- through which all third party service and 
-content providers will be connected. Media World services will enable Jawwal to focus more on the core business and 
-reduce operational costs, while expanding and creating an efficient ecosystem.<br>
- 
-            </p>
-            
+        <a onclick="history.back();" href="#" class="news_readmore" ><i class="fas fa-arrow-left" ></i> &nbsp;back </a><br>
+          <?php 
+            foreach ($new as $n){
+              echo '<img class="img-fluid news_img" src="./CMS/public/news/'.$n['image'].'"  style="padding-top: 5% !important; padding-bottom: 3% !important;"/>
+              <p class="news_title">
+              '.$n['title'].'
+  
+              </p>
+              <p class="news_subtitle">
+              '.$n['subtitle'].'<br>
+   
+              </p>';
+            }
+          ?>
+           
         </div>
       </div>
       <div class="section-space-padding"></div>
