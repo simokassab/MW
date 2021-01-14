@@ -6,6 +6,10 @@ include 'app/getproducts.php';
 
 $sliders = getSliders();
 $products = getProducts();
+
+$partners = get5Partners();
+$operators = get5Operators();
+
 ?>
 
 <style>
@@ -80,9 +84,9 @@ $products = getProducts();
 <div class="clients d-flex justify-content-center">
   <fieldset >
     <div class="switch-toggle switch-candy">
-      <input id="week" name="view" type="radio" checked>
+      <input id="week" class="switchh"  name="view" type="radio" checked>
       <label for="week" onclick="">PARTNERS</label>
-      <input id="day" name="view" type="radio">
+      <input id="day" class="switchh"  name="view" type="radio">
       <label for="day" onclick="">OPERATORS</label>
       <a></a>
     </div>
@@ -90,46 +94,101 @@ $products = getProducts();
 </div>
 
 
-<div class="operators-table" >
-  <!-- <div class="container-fluid">
-      <div class="row" style="border: 1px solid black; border-radius: 10px !important;">
-      <div class="col" style="margin-left:8%;">1</div>
-        <div class="col"  style="margin-left:8%;">2</div>
-        <div class="col"  style="margin-left:8%;">3</div>
-        <div class="col"  style="margin-left:8%;">4</div>
-        <div class="col"  style="margin-left:8%;">5</div>
-      </div>
-  </div> -->
-  <div class="wrapper table" >
-    <table >
-      <tr>
-        <td >
-          <img src="./img/free fire.png"  class="img-fluid" />
-        </td>
-        <td> <img src="./img/free fire.png"  class="img-fluid"/>
-      </td>
-        <td> <img src="./img/free fire.png"   class="img-fluid"/>
-      </td>
-        <td> <img src="./img/free fire.png"  class="img-fluid"/>
-      </td>
-        <td> <img src="./img/free fire.png"   class="img-fluid"/>
-      </td>
+<div class="operators-table par-table" >
+  
+    <div class="wrapper table " width="100%" cellpadding="0" cellspacing="5" >
+      <table >
+        <!-- <tr style="height: 120px;"> -->
+      <?php 
+        function isMobile() {
+          return preg_match("/(android|avantgo|blackberry|bolt|boost|cricket|docomo|fone|hiptop|mini|mobi|palm|phone|pie|tablet|up\.browser|up\.link|webos|wos)/i", $_SERVER["HTTP_USER_AGENT"]);
+        }
+        $count=0;
+        $divider=0;
+        if(isMobile()){
+          $divider =2;
+        }
+        else {
+          $divider =5;
+        }
+        foreach($partners as $p) {
+          if (fmod($count, $divider)==0){
+            echo "</tr><tr >";
+          }
+          echo ' <td class="container" style=" width:20%; ">
+                
+                  <img src="./CMS/public/partners/'.$p['image'].'"  class="img-fluid" title="'.$p['name'].'" />
+                  
+                </td>';
+        $count++;
+
+        }
+      ?>
       </tr>
-    </table>
-    
-  </div>
-  <div style="margin-top: 5%; text-align:center;" > 
+      </table>
+      
+    </div>
+    <div style="margin-top: 0%; text-align:center;" > 
         <a class="viewall" href="partners.php">
           VIEW ALL
         </a>
     </div>
-</div>
+  </div>
+  <div class="operators-table op-table" >
+    <div class="wrapper table " width="100%" cellpadding="0" cellspacing="5" >
+      <table >
+        <!-- <tr style="height: 120px;"> -->
+      <?php 
+
+        $count=0;
+        $divider=0;
+        if(isMobile()){
+          $divider =2;
+        }
+        else {
+          $divider =5;
+        }
+        foreach($operators as $o) {
+          if (fmod($count, $divider)==0){
+            echo "</tr><tr >";
+          }
+          echo ' <td class="container" style=" width:20%; ">
+                
+                  <img src="./CMS/public/operators/'.$o['image'].'"  class="img-fluid" title="'.$o['name'].'" />
+                  
+                </td>';
+        $count++;
+
+        }
+      ?>
+      </tr>
+      </table>
+      
+    </div>
+    <div style="margin-top: 0%; text-align:center;" > 
+        <a class="viewall" href="partners.php">
+          VIEW ALL
+        </a>
+    </div>
+  </div>
+  
 </div>
 
 
 </body>
+<script>
+    $(document).ready(function() {
+      $('.switchh').click(function() {
+        // alert("d")
+        $('.op-table, .par-table').toggle( "fast", function() {
+    // Animation complete.
+  });
+      });
+    });
+  </script>
 <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
 <script>
+  
    $(window).on('load', function() {
         AOS.init();
     });
